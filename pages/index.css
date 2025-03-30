@@ -10,17 +10,17 @@
 .header {
   display: flex;
   flex-direction: column;
+  padding: 30px 80px 40px;
   height: 800px;
   position: relative;
-  box-sizing: border-box;
   background-color: #fff;
   background-image: url(../images/se_project_2_files/se_project_2_files/background_header.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
-.accent {
+.header__accent {
+  display: block;
   font-family: Noto Serif, serif, Times New Roman;
   font-style: italic;
   font-weight: normal;
@@ -39,8 +39,7 @@
   display: block;
   letter-spacing: -0.6px;
   max-width: 729px;
-  margin-left: 80px;
-  margin-top: 213px;
+  margin: 128px 0 0;
 }
 
 .header__description {
@@ -51,12 +50,10 @@
   line-height: 30px;
   color: #000;
   max-width: 683px;
-  margin-left: 80px;
-  margin-top: 28px;
+  margin: 28px 0 0;
 }
 
 .header__image {
-  z-index: 1;
   position: absolute;
   max-width: 646px;
   max-height: 568px;
@@ -67,35 +64,22 @@
 .header__footer {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: flex-end;
   position: relative;
-  box-sizing: border-box;
   margin-top: auto;
-
   padding-bottom: 40px;
 }
 
-.header__footer_list-item {
-  list-style-type: none;
-  column-gap: 0;
+.header__paragraph {
   font-family: Inter, arial, sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
   line-height: 20px;
   color: #6f6f6f;
-  margin-left: 40px;
-}
-
-.header__address {
-  font-family: Inter, arial, sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 20px;
-  color: #6f6f6f;
-  margin-top: auto;
+  margin: 0;
   margin-right: 80px;
+  list-style-type: none;
 }
 
 .nav {
@@ -106,14 +90,15 @@
 .nav__logo {
   width: 105px;
   height: 39px;
-  margin: 30px 0 0 30px;
+  position: relative;
+  left: -50px;
 }
 
 .nav__links {
-  margin: 30px 80px 0 0;
-  column-gap: 20px;
+  gap: 20px;
   display: flex;
   list-style-type: none;
+  margin: 0;
   padding: 0;
 }
 
@@ -130,14 +115,11 @@
 .recipes {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  box-sizing: border-box;
   position: relative;
   background-color: #0a2750;
   background-image: url(../images/se_project_2_files/se_project_2_files/background_recipes.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: center;
 }
 
 .recipes__title {
@@ -147,7 +129,7 @@
   font-size: 44px;
   line-height: 52px;
   color: #fff;
-  display: block;
+  display: flex;
   letter-spacing: -0.6px;
   max-width: 580px;
   margin-left: 80px;
@@ -161,7 +143,7 @@
   font-size: 20px;
   line-height: 30px;
   color: #fff;
-  display: block;
+  display: flex;
   max-width: 438px;
   margin-left: 80px;
   margin-top: 24px;
@@ -169,18 +151,17 @@
 
 .recipes__videos {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
   margin-top: 80px;
   margin-bottom: 215px;
-  margin-left: 150px;
+  gap: 40px;
+  list-style-type: none;
 }
 
 .recipes__iframe {
   width: 480px;
   height: 273px;
-  gap: 40px;
   list-style-type: none;
 }
 
@@ -192,17 +173,107 @@
   line-height: 30px;
   color: #fff;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   position: relative;
   margin-top: 24px;
   letter-spacing: -0.6px;
 }
 
-.caption-duration {
-  margin-left: 80px;
+.reservation {
+  padding: 100px 0 120px;
+  background-image: url(../images/se_project_2_files/se_project_2_files/background_reservation.svg);
+  background-color: #d9e7ff;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.reservation {
+.reservation__title {
+  margin: 0 0 80px;
+  text-align: center;
+  font-family: Inter, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 44px;
+  line-height: 52px;
+  color: #000;
+}
+
+.reservation__form {
+  margin: 0 auto;
+}
+
+.form {
+  max-width: 385px;
+}
+
+.form__fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+  font-family: Inter, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
+}
+
+.form__input {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 15px 20px;
+  margin: 8px 0 32px;
+  border: 1px solid #838383;
+  border-radius: 4px;
+  font-family: Inter, arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.form__button {
+  border-radius: 4px;
+  width: 100%;
+  padding: 20px 0;
+  font-family: Inter, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #fff;
+  background-color: #1878dc;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 32px;
+}
+
+.form__button:hover {
+  background-color: #3f96f3;
+  transition: background-color 0.3s ease;
+}
+
+.form__checkbox {
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+
+.form__label_type_checkbox {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  background-color: #1878dc;
+  background-image: url(../images/se_project_2_files/se_project_2_files/check.svg);
+  background-size: cover;
+  font-family: Inter, arial, sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000;
 }
 
 .menu {
