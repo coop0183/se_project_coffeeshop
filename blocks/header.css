@@ -1,13 +1,15 @@
 .header {
   display: flex;
   flex-direction: column;
-  padding: 30px 80px 40px;
+  box-sizing: border-box;
+  z-index: 1;
   height: 800px;
   position: relative;
   background-color: #fff;
   background-image: url(../images/se_project_2_files/se_project_2_files/background_header.svg);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
 }
 
 .header__accent {
@@ -30,7 +32,7 @@
   display: block;
   letter-spacing: -0.6px;
   max-width: 729px;
-  margin: 128px 0 0;
+  margin: 183px 0 0;
 }
 
 .header__description {
@@ -50,6 +52,7 @@
   max-height: 568px;
   top: 124px;
   right: 5px;
+  z-index: -1;
 }
 
 .header__footer {
@@ -58,7 +61,6 @@
   align-items: flex-end;
   position: relative;
   margin-top: auto;
-  padding-bottom: 40px;
 }
 
 .header__paragraph {
@@ -69,6 +71,5 @@
   line-height: 20px;
   color: #6f6f6f;
   margin: 0;
-  margin-right: 80px;
   list-style-type: none;
 }
