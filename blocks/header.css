@@ -4,6 +4,7 @@
   box-sizing: border-box;
   z-index: 1;
   height: 800px;
+  padding: 30px 80px 40px;
   position: relative;
   background-color: #fff;
   background-image: url(../images/se_project_2_files/se_project_2_files/background_header.svg);
